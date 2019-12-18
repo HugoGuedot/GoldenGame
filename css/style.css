@@ -1,0 +1,417 @@
+@font-face {
+    font-family: "Doctor Glitch";
+    src: url('../font/Doctor_Glitch.otf');
+}
+
+html{
+    font-family: 'Montserrat', sans-serif, 'Arial';
+}
+
+/*=======================HEADER=========================================*/
+
+.firstPlan{
+    position: relative;
+    z-index: 1;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 2rem 0 2rem;
+
+}
+
+.goldenLogo{
+    max-height: 7rem;
+}
+
+.header nav{
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+}
+
+.header nav a{
+    text-decoration: none;
+    height: 1.5rem;
+    font-size: 1.5rem;
+    color: #e4b316;
+    font-weight: bold;
+}
+
+.header nav a:hover{
+    text-decoration: underline;
+}
+
+#current{
+    text-decoration: underline;
+}
+
+
+/*======================HOMEPAGE========================================*/
+
+.countdown{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10rem;
+}
+
+.demo{
+    font-family: 'Doctor Glitch';
+    font-size: 8rem;
+    color: #E4B316;
+}
+
+.demoDescr{
+    font-family: 'Doctor Glitch', sans-serif, 'Arial';
+    font-size: 3rem;
+}
+
+.countdown img{
+    margin-top: 22rem;
+}
+
+@media (max-width: 1800px){
+    .countdown img{
+    margin-top: 9rem;
+}
+}
+
+
+
+
+
+
+
+.homeTitle{
+    margin: 0 0 2rem 0;
+}
+
+.blackPart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.posterIMG{
+    max-height: 100vh;
+    width: auto;
+}
+
+.logoAgf{
+    position: absolute;
+    right: 5rem;
+    bottom: 1rem;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5rem 0 5rem;
+}
+
+.titleBlackZone{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2EC7D3;
+    text-transform: uppercase;
+}
+
+.textBlackZone{
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 10rem;
+}
+
+.whitePart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.titleWhiteZone{
+    color: #E4B316;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.textWhiteZone{
+    color: #000;
+    font-size: 1.5rem;
+}
+
+.buttonWhiteZone{
+    text-decoration: none;
+    border: 3px solid #E4B316;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 10rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #E4B316;
+    align-items: flex-end;
+    margin-top: 20rem;
+    margin-left: 35rem;
+}
+
+
+
+
+
+
+
+.partners{
+
+}
+
+.partnersTitle{
+    color: #fff;
+    font-size: 3rem;
+}
+
+
+
+
+.contact{
+    display: flex;
+    justify-content: space-around;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form  input::placeholder{
+    font-weight: bold;
+    color: #3c3c3b;
+}
+
+.footerTitle{
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+.contactFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bottomFooter{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem 0 1rem 0;
+    background: #3c3c3b;
+    color: #fff;
+}
+
+.bottomFooter a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.bottomFooter a:hover{
+    text-decoration: underline;
+}
+
+/*
+.designedBy{
+    display: flex;
+    align-items: center;
+    background: #3c3c3b;
+}
+
+.designedByContent{
+    color: #B7B7B7;
+    background: #3c3c3b;
+}
+*/
+
+
+
+
+/*===================CSS FOR HOME BACKGROUND==================================*/
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+
+.context {
+    width: 100%;
+    position: absolute;
+    top:50vh;
+
+}
+
+.context h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+
+
+.area{
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+    width: 100%;
+    height:100vh;
+    z-index: -1;
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+.circles li:nth-child(11){
+    left: 15%;
+    width: 35px;
+    height: 35px;
+    animation-delay: 20s;
+}
+
+.circles li:nth-child(12){
+    left: 75%;
+    width: 120px;
+    height: 120px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(13){
+    left: 18%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 17s;
+}
+
+.circles li:nth-child(14){
+    left: 7%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+
+
+
+
